@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <main>
       <h1>POSTテスト</h1>
-      <form onSubmit={onSubmitHandler} className='flex flex-col justify-center' action='/api/form' method='POST'>
+      <form onSubmit={onSubmitHandler} className='flex flex-col justify-center' action='/api/post' method='POST'>
           <input value={name} onChange={onChangeHandler} type='text' name='name' placeholder='名前' 
           style={{
             padding: '10px',
