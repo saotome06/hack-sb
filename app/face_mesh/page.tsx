@@ -1,4 +1,4 @@
-"use client"
+//"use client"
 
 import { useState, useRef } from 'react';
 import { LandmarkConnectionArray, drawConnectors, drawLandmarks } from '@mediapipe/drawing_utils';
@@ -13,7 +13,7 @@ if (typeof window !== 'undefined') {
   FaceMesh = require('@mediapipe/face_mesh').FaceMesh;
 }
 
-export default function Home() {
+export default function FaceMesher() {
   const [landmarks, setLandmarks] = useState([]);
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
